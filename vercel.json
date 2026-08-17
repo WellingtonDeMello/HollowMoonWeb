@@ -1,8 +1,19 @@
 {
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
+	"rewrites": [
+		{
+			"source": "/game",
+			"destination": "/index.html"
+		},
+		{
+			"source": "/game/(.*)",
+			"destination": "/index.html"
+		}
+	],
+	"redirects": [
+		{
+			"source": "/",
+			"destination": "/game",
+			"permanent": false
+		}
+	]
 }
